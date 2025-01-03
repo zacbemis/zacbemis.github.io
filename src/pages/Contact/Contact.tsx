@@ -1,4 +1,4 @@
-import React, { FC, useState, FormEvent, useRef } from 'react';
+import { FC, useState, FormEvent, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
 
