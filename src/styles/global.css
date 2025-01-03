@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #0066cc;
+  --text-color: #e6e6e6;
+  --background-color: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.5;
+  background-image: url('/src/assets/yosemite.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  padding-top: 80px;
+  overflow-y: auto;
+  width: 100%;
+} 
