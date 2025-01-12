@@ -12,7 +12,7 @@
 }
 
 .projectCard {
-  background: white;
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -52,7 +52,7 @@
 }
 
 .projectContent p {
-  color: #666;
+  color: #999;
   margin-bottom: 1rem;
   line-height: 1.5;
 }

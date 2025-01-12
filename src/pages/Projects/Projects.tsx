@@ -16,10 +16,10 @@ const projects: Project[] = [
     id: 1,
     title: "Personal Portfolio Website",
     description: "A responsive portfolio website built with React and TypeScript",
-    image: "/project1.jpg", // Add actual image path
+    image: "C:\Projects\Portfolio\zacbemis.github.io\src\assets\Screenshot 2025-01-11 204750.png",
     technologies: ["React", "TypeScript", "CSS Modules"],
-    githubUrl: "https://github.com/yourusername/portfolio",
-    liveUrl: "https://yourwebsite.com"
+    githubUrl: "https://github.com/zacbemis/zacbemis.github.io",
+    liveUrl: "https://github.com/zacbemis/zacbemis.github.io"
   },
   {
     id: 2,
