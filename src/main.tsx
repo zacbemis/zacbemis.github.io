@@ -4,7 +4,7 @@ import App from './App'
 import './styles/global.css'
 import emailjs from '@emailjs/browser';
 
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("_BVA-sSG8bwR9ap0J");
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
