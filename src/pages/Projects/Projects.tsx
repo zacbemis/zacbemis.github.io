@@ -16,7 +16,7 @@ const projects: Project[] = [
     id: 1,
     title: "Personal Portfolio Website",
     description: "A responsive portfolio website built with React and TypeScript",
-    image: "C:\Projects\Portfolio\zacbemis.github.io\src\assets\Screenshot 2025-01-11 204750.png",
+    image: "/assets/personalwebsite.png",
     technologies: ["React", "TypeScript", "CSS Modules"],
     githubUrl: "https://github.com/zacbemis/zacbemis.github.io",
     liveUrl: "https://github.com/zacbemis/zacbemis.github.io"
