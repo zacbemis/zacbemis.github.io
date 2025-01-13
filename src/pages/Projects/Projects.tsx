@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import styles from './Projects.module.css';
+import personalWebsiteImg from '../../assets/personalwebsite.png';
 
 interface Project {
   id: number;
@@ -16,16 +17,15 @@ const projects: Project[] = [
     id: 1,
     title: "Personal Portfolio Website",
     description: "A responsive portfolio website built with React and TypeScript",
-    image: "/assets/personalwebsite.png",
+    image: personalWebsiteImg,
     technologies: ["React", "TypeScript", "CSS Modules"],
     githubUrl: "https://github.com/zacbemis/zacbemis.github.io",
-    liveUrl: "https://github.com/zacbemis/zacbemis.github.io"
   },
   {
     id: 2,
     title: "Task Management App",
     description: "Full-stack task management application with real-time updates",
-    image: "/project2.jpg", // Add actual image path
+    image: "/project2.jpg",
     technologies: ["React", "Node.js", "MongoDB", "WebSocket"],
     githubUrl: "https://github.com/yourusername/task-manager"
   },
