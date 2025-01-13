@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import styles from './Projects.module.css';
 import personalWebsiteImg from '../../assets/personalwebsite.png';
+import pythonML from '../../assets/pythonML.png';
 
 interface Project {
   id: number;
@@ -23,11 +24,11 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "Full-stack task management application with real-time updates",
-    image: "/project2.jpg",
-    technologies: ["React", "Node.js", "MongoDB", "WebSocket"],
-    githubUrl: "https://github.com/yourusername/task-manager"
+    title: "Predicting the Stock Market",
+    description: "Python project that uses machine learning to predict the stock market",
+    image: pythonML,
+    technologies: ["Python", "Scikit-learn", "Matplotlib", "NumPy", "Pandas"],
+    githubUrl: "https://github.com/zacbemis/VFA"
   },
   // Add more projects as needed
 ];
