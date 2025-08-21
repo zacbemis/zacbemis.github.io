@@ -6,11 +6,7 @@ import Contact from './pages/Contact/Contact';
 import { useEffect } from 'react';
 
 const Router = () => {
-  useEffect(() => {
-    console.log('Router mounted');
-    console.log('Current path:', window.location.pathname);
-    console.log('Current hash:', window.location.hash);
-  }, []);
+  // Removed console.log statements that could expose sensitive information
 
   return (
     <HashRouter>

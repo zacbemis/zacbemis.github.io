@@ -26,10 +26,10 @@ const Contact: FC = () => {
 
     try {
       const result = await emailjs.sendForm(
-        'service_qwgswbf', // Email JS service ID
-        'template_ta9pwtb', // Email JS template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID as string,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string,
         form.current!,
-        '_BVA-sSG8bwR9ap0J' // Email JS public key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string
       );
 
       if (result.text === 'OK') {
