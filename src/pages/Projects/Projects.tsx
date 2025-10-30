@@ -4,6 +4,7 @@ import personalWebsiteImg from "../../assets/personalwebsite.png";
 import pythonML from "../../assets/pythonML.png";
 import mechanicWebsiteImg from "../../assets/MechanicWebsite.png";
 import spotlightImg from "../../assets/spotlight.png";
+import diamondManImg from "../../assets/diamondMan.png";
 
 interface Project {
   id: number;
@@ -52,6 +53,15 @@ const projects: Project[] = [
     image: spotlightImg,
     technologies: ["Go", "CLI", "Shell", "Ollama"],
     githubUrl: "https://github.com/zacbemis/Spotlight",
+  },
+  {
+    id: 5,
+    title: "Diamond Man 2D Game",
+    description:
+      "A Java2D platformer and custom engine showcasing sprite animation and input handling",
+    image: diamondManImg,
+    technologies: ["Java", "Java2D", "Game Engine"],
+    githubUrl: "https://github.com/zacbemis/Java2DGame/tree/main",
   },
   // Add more projects as needed
 ];
