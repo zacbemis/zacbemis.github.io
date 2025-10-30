@@ -3,6 +3,7 @@ import styles from "./Projects.module.css";
 import personalWebsiteImg from "../../assets/personalwebsite.png";
 import pythonML from "../../assets/pythonML.png";
 import mechanicWebsiteImg from "../../assets/MechanicWebsite.png";
+import spotlightImg from "../../assets/spotlight.png";
 
 interface Project {
   id: number;
@@ -42,6 +43,15 @@ const projects: Project[] = [
     technologies: ["React", "JavaScript", "Mongoose", "Node.js", "Express"],
     githubUrl:
       "https://github.com/alirdin30/CSC-131-Pit-Stop-Programmers-Spring-2025",
+  },
+  {
+    id: 4,
+    title: "Spotlight CLI",
+    description:
+      "A minimal Go CLI for chatting with local LLMs featuring streaming responses",
+    image: spotlightImg,
+    technologies: ["Go", "CLI", "Shell", "Ollama"],
+    githubUrl: "https://github.com/zacbemis/Spotlight",
   },
   // Add more projects as needed
 ];
