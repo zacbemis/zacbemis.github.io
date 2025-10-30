@@ -5,6 +5,7 @@ import pythonML from "../../assets/pythonML.png";
 import mechanicWebsiteImg from "../../assets/MechanicWebsite.png";
 import spotlightImg from "../../assets/spotlight.png";
 import diamondManImg from "../../assets/diamondMan.png";
+import climbingAppImg from "../../assets/climbingApp.png";
 
 interface Project {
   id: number;
@@ -12,7 +13,7 @@ interface Project {
   description: string;
   image: string;
   technologies: string[];
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
 }
 
@@ -63,6 +64,15 @@ const projects: Project[] = [
     technologies: ["Java", "Java2D", "Game Engine"],
     githubUrl: "https://github.com/zacbemis/Java2DGame/tree/main",
   },
+  {
+    id: 6,
+    title: "Climbing Companion App",
+    description:
+      "A climbing training companion app with route tracking and session analytics",
+    image: climbingAppImg,
+    technologies: ["React Native", "TypeScript", "Firebase"],
+    liveUrl: "https://github.com/zacbemis",
+  },
   // Add more projects as needed
 ];
 
@@ -91,15 +101,17 @@ const Projects: FC = () => {
                 ))}
               </div>
               <div className={styles.links}>
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.link}
-                >
-                  View on GitHub
-                </a>
-                {project.liveUrl && (
+                {(project.githubUrl || project.liveUrl) && (
+                  <a
+                    href={project.githubUrl ?? project.liveUrl ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.link}
+                  >
+                    {project.githubUrl ? "View on GitHub" : "View Website"}
+                  </a>
+                )}
+                {project.liveUrl && project.githubUrl && (
                   <a
                     href={project.liveUrl}
                     target="_blank"
