@@ -66,9 +66,8 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    title: "Climbing Companion App",
-    description:
-      "A climbing training companion app with route tracking and session analytics",
+    title: "SystemBoard Climbing App",
+    description: "A climbing app for the SystemBoard climbing training board",
     image: climbingAppImg,
     technologies: ["React Native", "TypeScript", "Firebase"],
     liveUrl: "https://github.com/zacbemis",
